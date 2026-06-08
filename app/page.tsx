@@ -687,7 +687,8 @@ export default function Portfolio() {
                 {/* Main photo container - made more responsive */}
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-full bg-white/20 backdrop-blur-sm border-4 border-white/30 flex items-center justify-center overflow-hidden animate-fade-in mx-auto cursor-pointer">
                   <img
-                    src="/placeholder.svg?height=256&width=256&text=Amit+Bisht"
+                    // src=".../MyPhoto.jpeg?height=256&width=256&text=Amit+Bisht"
+                    src="/MyPhoto.jpeg?height=256&width=256&text=Amit+Bisht"
                     alt="Amit Bisht"
                     className="w-full h-full object-cover"
                   />
