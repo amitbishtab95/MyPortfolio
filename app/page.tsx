@@ -8,39 +8,60 @@ import ProjectModal from "@/components/project-modal"
 import { sendMessage } from "@/actions/contact"
 import {
   Code,
-  Palette,
-  Globe,
-  Calendar,
-  MapPin,
-  Mail,
-  Phone,
-  Github,
-  Linkedin,
   FileCode,
-  Database,
-  GitBranch,
-  Terminal,
+  Globe,
+  Palette,
   Layers,
-  Settings,
+  Database,
   Zap,
-  Box,
+  GitBranch,
+  Github,
+  Settings,
+  Terminal,
   Monitor,
   Cpu,
+  Box,
+  GitMerge,
+  Users,
+  Calendar,
+  ChevronRightSquare,
+  Braces,
+  Figma,
+  Cloud,
+  Workflow,
+  Binary,
+  Sparkles,
+  Bot,
+  MessageSquare,
+  Eye,
+  BarChart,
+  Lock,
+  TestTube,
+  Rocket,
+  Shield,
+  Layout,
+  Component,
+  Share2,
+  AppWindow,
+  Paintbrush,
+  Server,
   Building,
   TrendingUp,
-  Shield,
-  ChevronDown,
-  ChevronUp,
-  Target,
-  Wrench,
+  CreditCard,
+  Mail,
+  User,
+  Wrench,     
   Activity,
   Bug,
   Smartphone,
-  Component,
-  User,
+  ChevronDown,
+  ChevronUp,
   Briefcase,
-  CreditCard,
-} from "lucide-react"
+  MapPin,
+  Phone,
+  Linkedin    
+} from "lucide-react";
+
 
 export default function Portfolio() {
   const [isLoading, setIsLoading] = useState(true)
@@ -239,16 +260,17 @@ export default function Portfolio() {
   }
 
   const skillCategories = [
+    // Languages & Frameworks
     {
-      name: "Angular 10+",
+      name: "Angular 16+",
       level: 90,
-      icon: <Code className="w-4 h-4" />,
+      icon: <Component className="w-4 h-4" />,
       category: "Languages & Frameworks",
       gradient: "from-red-500 to-pink-500",
     },
     {
       name: "JavaScript (ES6)",
-      level: 95,
+      level: 90,
       icon: <FileCode className="w-4 h-4" />,
       category: "Languages & Frameworks",
       gradient: "from-yellow-500 to-orange-500",
@@ -256,7 +278,7 @@ export default function Portfolio() {
     {
       name: "TypeScript",
       level: 85,
-      icon: <Code className="w-4 h-4" />,
+      icon: <Braces className="w-4 h-4" />,
       category: "Languages & Frameworks",
       gradient: "from-blue-500 to-cyan-500",
     },
@@ -270,38 +292,49 @@ export default function Portfolio() {
     {
       name: "SCSS",
       level: 90,
-      icon: <Palette className="w-4 h-4" />,
+      icon: <Paintbrush className="w-4 h-4" />,
       category: "Languages & Frameworks",
       gradient: "from-pink-500 to-purple-500",
     },
     {
       name: "Bootstrap",
       level: 85,
-      icon: <Layers className="w-4 h-4" />,
+      icon: <Layout className="w-4 h-4" />,
       category: "Languages & Frameworks",
       gradient: "from-purple-500 to-indigo-500",
     },
     {
+      name: "RESTful API",
+      level: 90,
+      icon: <Server className="w-4 h-4" />,
+      category: "Languages & Frameworks",
+      gradient: "from-teal-500 to-green-500",
+    },
+  
+    // State Management & Libraries
+    {
       name: "RxJS",
       level: 80,
       icon: <Zap className="w-4 h-4" />,
-      category: "Libraries & APIs",
+      category: "State Management & Libraries",
       gradient: "from-indigo-500 to-blue-500",
     },
     {
       name: "Angular Material",
       level: 85,
       icon: <Box className="w-4 h-4" />,
-      category: "Libraries & APIs",
+      category: "State Management & Libraries",
       gradient: "from-cyan-500 to-teal-500",
     },
     {
-      name: "RESTful API",
-      level: 90,
-      icon: <Database className="w-4 h-4" />,
-      category: "Libraries & APIs",
-      gradient: "from-teal-500 to-green-500",
+      name: "NgRx",
+      level: 80,
+      icon: <Share2 className="w-4 h-4" />,
+      category: "State Management & Libraries",
+      gradient: "from-indigo-500 to-blue-500",
     },
+  
+    // Version Control & Collaboration
     {
       name: "Git",
       level: 90,
@@ -319,17 +352,40 @@ export default function Portfolio() {
     {
       name: "Bitbucket",
       level: 80,
-      icon: <GitBranch className="w-4 h-4" />,
+      icon: <GitMerge className="w-4 h-4" />,
       category: "Version Control & Collaboration",
       gradient: "from-yellow-500 to-amber-500",
     },
     {
       name: "JIRA",
       level: 75,
-      icon: <Settings className="w-4 h-4" />,
+      icon: <Calendar className="w-4 h-4" />,
       category: "Version Control & Collaboration",
       gradient: "from-amber-500 to-orange-500",
     },
+    {
+      name: "GitLab",
+      level: 75,
+      icon: <GitBranch className="w-4 h-4" />,
+      category: "Version Control & Collaboration",
+      gradient: "from-amber-500 to-orange-500",
+    },
+    {
+      name: "Confluence",
+      level: 75,
+      icon: <Users className="w-4 h-4" />,
+      category: "Version Control & Collaboration",
+      gradient: "from-amber-500 to-orange-500",
+    },
+    {
+      name: "Agile/Scrum",
+      level: 75,
+      icon: <ChevronRightSquare className="w-4 h-4" />,
+      category: "Version Control & Collaboration",
+      gradient: "from-amber-500 to-orange-500",
+    },
+  
+    // Developer Tools
     {
       name: "VS Code",
       level: 95,
@@ -354,11 +410,78 @@ export default function Portfolio() {
     {
       name: "Cursor",
       level: 80,
-      icon: <Terminal className="w-4 h-4" />,
+      icon: <Binary className="w-4 h-4" />,
       category: "Developer Tools",
       gradient: "from-violet-500 to-indigo-500",
     },
-  ]
+    {
+      name: "Replit",
+      level: 80,
+      icon: <Cloud className="w-4 h-4" />,
+      category: "Developer Tools",
+      gradient: "from-violet-500 to-indigo-500",
+    },
+    {
+      name: "Notepad++",
+      level: 80,
+      icon: <FileCode className="w-4 h-4" />,
+      category: "Developer Tools",
+      gradient: "from-violet-500 to-indigo-500",
+    },
+    {
+      name: "Postman",
+      level: 80,
+      icon: <Workflow className="w-4 h-4" />,
+      category: "Developer Tools",
+      gradient: "from-violet-500 to-indigo-500",
+    },
+  
+    // Testing & Quality
+    {
+      name: "Jasmine/Karma",
+      level: 85,
+      icon: <TestTube className="w-4 h-4" />,
+      category: "Testing & Quality",
+      gradient: "from-emerald-500 to-green-500",
+    },
+    {
+      name: "SonarQube",
+      level: 80,
+      icon: <BarChart className="w-4 h-4" />,
+      category: "Testing & Quality",
+      gradient: "from-emerald-500 to-green-500",
+    },
+    // AI Tools
+    {
+      name: "Copilot",
+      level: 80,
+      icon: <Sparkles className="w-4 h-4" />,
+      category: "AI Tools",
+      gradient: "from-violet-500 to-indigo-500",
+    },
+    {
+      name: "GitLab Duo",
+      level: 80,
+      icon: <Bot className="w-4 h-4" />,
+      category: "AI Tools",
+      gradient: "from-violet-500 to-indigo-500",
+    },
+    {
+      name: "AI-assisted development",
+      level: 80,
+      icon: <Rocket className="w-4 h-4" />,
+      category: "AI Tools",
+      gradient: "from-violet-500 to-indigo-500",
+    },
+    {
+      name: "ChatGPT",
+      level: 80,
+      icon: <MessageSquare className="w-4 h-4" />,
+      category: "AI Tools",
+      gradient: "from-violet-500 to-indigo-500",
+    },
+  ];
+  
 
   // Group skills by category
   const groupedSkills = skillCategories.reduce(
@@ -801,11 +924,13 @@ export default function Portfolio() {
                   >
                     <div className="flex items-center space-x-3">
                       {category === "Languages & Frameworks" && <Code className="w-5 h-5 text-green-600" />}
-                      {category === "Libraries & APIs" && <Database className="w-5 h-5 text-green-600" />}
+                      {category === "State Management & Libraries" && <Database className="w-5 h-5 text-green-600" />}
                       {category === "Version Control & Collaboration" && (
                         <GitBranch className="w-5 h-5 text-green-600" />
                       )}
                       {category === "Developer Tools" && <Terminal className="w-5 h-5 text-green-600" />}
+                      {category === "Testing & Quality" && <TestTube className="w-5 h-5 text-green-600" />}
+                      {category === "AI Tools" && <Sparkles className="w-5 h-5 text-green-600" />}
                       <h3 className="text-base sm:text-lg font-semibold text-green-700">{category}</h3>
                       <span className="text-xs sm:text-sm text-gray-500 bg-green-100 px-2 py-1 rounded-full">
                         {skills.length} skills
@@ -1034,19 +1159,25 @@ export default function Portfolio() {
                 </div>
                 <div className="flex space-x-4 mt-6 sm:mt-8 relative z-10">
                   <a
-                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/amitbishtab95"
                     className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition-all duration-300 border border-white/20"
                   >
                     <Github className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
                   </a>
                   <a
-                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/amit-bisht-830758169"
                     className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition-all duration-300 border border-white/20"
                   >
                     <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
                   </a>
                   <a
-                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="mailto:abbisht.amit@gmail.com"
                     className="bg-white/20 hover:bg-white/30 p-3 rounded-full transition-all duration-300 border border-white/20"
                   >
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-red-400" />
@@ -1143,19 +1274,25 @@ export default function Portfolio() {
             </div>
             <div className="flex justify-center space-x-4">
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/amitbishtab95"
                 className="text-gray-400 hover:text-white transition-colors p-2 rounded-full hover:bg-gray-800"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/amit-bisht-830758169"
                 className="text-gray-400 hover:text-white transition-colors p-2 rounded-full hover:bg-gray-800"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:abbisht.amit@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors p-2 rounded-full hover:bg-gray-800"
               >
                 <Mail className="w-5 h-5" />

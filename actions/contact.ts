@@ -1,6 +1,6 @@
 "use server"
 
-export async function sendMessage(formData: FormData) {
+export async function sendMessage(previousState: any, formData: FormData){
   // Simulate processing time
   await new Promise((resolve) => setTimeout(resolve, 1000))
 
