@@ -31,8 +31,8 @@ export default function Header() {
   const downloadResume = () => {
     // Create a link element and trigger download
     const link = document.createElement("a")
-    link.href = "/Amit_Bisht_Angular_Developer.pdf" // This will look for resume.pdf in the public folder
-    link.download = "Amit_Bisht_Angular_Developer.pdf"
+    link.href = "/Amit_Bisht_Senior_Angular_Developer.pdf" // This will look for resume.pdf in the public folder
+    link.download = "Amit_Bisht_Senior_Angular_Developer.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

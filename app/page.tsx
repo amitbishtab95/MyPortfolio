@@ -1116,12 +1116,12 @@ export default function Portfolio() {
         }}
       >
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-white">
+          <div className="max-w-6xl mx-auto text-white">
             <div className="flex items-center justify-center space-x-3 mb-8 sm:mb-12">
               <Mail className="w-8 h-8 text-white" />
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Get In Touch</h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
+            <div className="flex justify-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 relative overflow-hidden">
                 {/* Spider Web Background for Contact Info */}
                 <div className="absolute inset-0 opacity-10 animate-spider-web">
@@ -1140,11 +1140,11 @@ export default function Portfolio() {
                   </svg>
                 </div>
 
-                <div className="flex items-center space-x-3 mb-4 sm:mb-6 relative z-10">
+                {/* <div className="flex items-center space-x-3 mb-4 sm:mb-6 relative z-10">
                   <Mail className="w-6 h-6 text-white" />
                   <h3 className="text-xl sm:text-2xl font-semibold">Contact Info</h3>
-                </div>
-                <div className="space-y-3 sm:space-y-4 text-left relative z-10">
+                </div> */}
+                <div className="space-y-3 sm:space-y-4 text-center relative z-10">
                   <div className="flex items-center space-x-3">
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-blue-400" />
                     <span className="text-sm sm:text-base">abbisht.amit@gmail.com</span>
@@ -1185,8 +1185,7 @@ export default function Portfolio() {
                   </a>
                 </div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 relative overflow-hidden">
-                {/* Spider Web Background for Contact Form */}
+              {/* <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 animate-spider-web">
                   <svg width="100%" height="100%" className="absolute inset-0">
                     <defs>
@@ -1248,7 +1247,7 @@ export default function Portfolio() {
                     </div>
                   )}
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -1266,12 +1265,12 @@ export default function Portfolio() {
             </div>
             <div className="flex items-center justify-center space-x-4 mb-6 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
-                <span>© 2025</span>
+                <span>© 2026</span>
               </div>
-              <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
-              <div className="flex items-center space-x-2">
-                <span>Made with Angular and SCSS</span>
-              </div>
+              {/* <div className="w-1 h-1 bg-gray-600 rounded-full"></div> */}
+              {/* <div className="flex items-center space-x-2">
+                <span>Made with Next.js and V0</span>
+              </div> */}
             </div>
             <div className="flex justify-center space-x-4">
               <a
